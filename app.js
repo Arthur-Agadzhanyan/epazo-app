@@ -1,15 +1,11 @@
 const express = require('express')
 const config = require('config')
 const path = require('path')
-// const cors = require('cors')
 const mongoose = require('mongoose')
 const app = express()
+const compression = require('compression')
 
-// app.use(cors({
-//     origin: 'https://epazo.netlify.app',
-//     methods: ["GET","POST","PUT"],
-//     optionsSuccessStatus: 200
-// }))
+app.use(compression())// сжимаем текст в gzip
 
 app.use(express.json({extended: true}))// мы подключаем этот мидлвеар для того чтобы хорошо обрабатывать req.body
 app.use('/api/auth',require('./routes/main.routes'))
