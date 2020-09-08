@@ -1,1 +1,0 @@
-{"version":3,"sources":["pagination.module.scss"],"names":[],"mappings":"AAAA,wCACI,iBAAkB,CAClB,4BAA8B","file":"9.ba7d967f.chunk.css","sourcesContent":[".pagination_container{\r\n    text-align: center;\r\n    margin-bottom: 50px !important;\r\n}\r\n\r\n.pagination_list{\r\n    // border: 1px solid #000;\r\n}"]}
